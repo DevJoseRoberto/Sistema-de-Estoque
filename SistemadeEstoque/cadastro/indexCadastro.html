@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        form{
+            padding: 200px ;
+            background-color: #36454f;
+            box-shadow: 0 0 20px black;
+            width: 250px;
+            height: 350px;
+            margin-left: 600px;
+            margin-top: 100px;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            margin-top: -150px;
+            text-align: center;
+            font-size: 50px;
+            color: #ffffff;
+        }
+
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            margin-top: 10px;
+        }
+
+        input[type="text"]{
+            width: 250px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            border: 5px solid #ccc;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        select{
+            width: 270px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            border: 5px solid #ccc;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        input[type="submit"]{
+            background-color: #e67e22;
+            color: #ffffff;
+            border: none;
+            width: 270px;
+            padding: 15px;
+            font-size: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+            margin-left: 1px;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastrar.php" method="post">
+        <h1>Cadastro de Produtos</h1>
+        <label for="valor">Valor:</label><br>
+        <input type="text" name="valor" id="valor"><br><br>
+        <label for="marca">Marca:</label><br>
+        <input type="text" name="marca" id="marca"><br><br>
+        <label for="categoria">Categoria:</label><br>
+        <select id="categoria" name="categoria">
+            <option value=""></option>
+            <option value="Padaria">Padaria</option>
+            <option value="Bebidas">Bebidas</option>
+            <option value="Higiene">Higiene</option>
+            <option value="Limpeza">Limpeza</option>
+          </select>
+
+          
+        <input type="submit" value="cadastrar">
+    
+    </form>
+</body>
+</html>
